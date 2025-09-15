@@ -12,7 +12,7 @@ Next.js dashboard to visualize Shopify-ingested data (KPIs, charts, lists). Uses
 6. Open http://localhost:3000
 
 ## .env example
-DATABASE_URL="postgresql://neondb_owner:npg_VNCfc5pEIF9s@ep-wandering-band-a14c0iw5-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+DATABASE_URL="db_url"
 NEXTAUTH_SECRET="your_random_secret"
 NEXTAUTH_URL="http://localhost:3000"
 ADMIN_EMAIL="admin@example.com"
