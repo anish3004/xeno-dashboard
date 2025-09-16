@@ -29,6 +29,27 @@ Password: password123
 - Customers & orders lists
 - Email auth (NextAuth) or demo login
 
+## Architecture Diagram
+                ┌─────────────────────────┐
+                │        Frontend          │
+                │  Next.js + Tailwind UI   │
+                │  (xeno-dashboard)        │
+                └─────────────▲───────────┘
+                              │ API Calls (REST)
+                              ▼
+                ┌─────────────────────────┐
+                │         Backend          │
+                │ Node.js + Express + ORM  │
+                │  (xeno-backend)          │
+                └─────────────▲───────────┘
+                              │ Prisma Queries
+                              ▼
+                ┌─────────────────────────┐
+                │       Database           │
+                │ PostgreSQL on Neon DB    │
+                └─────────────────────────┘
+
+
 ## Troubleshooting
 - If `nodemailer` missing: `npm i nodemailer`
 - If `react-datepicker` missing (reports date range): `npm i react-datepicker`
